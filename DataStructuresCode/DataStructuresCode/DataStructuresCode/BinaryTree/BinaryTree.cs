@@ -71,25 +71,35 @@ namespace DataStructuresCode.BinaryTree
                 }
             }
         }
-        public object Search(int num, Node rootOrCurrent)
+        public void Search(int num)
         {
-            current = rootOrCurrent;
+            current = root;
 
-            if (current == null)
+            while (true)
             {
-                Console.WriteLine("Number not found");
-            }      
-            if (num == current.info)
-            {
-                Console.WriteLine(num);
+                if (current == null)
+                {
+                    Console.WriteLine("Number not found");
+                    Console.ReadLine();
+                    break;
+                }
+                else if (num == current.info)
+                {
+                    Console.WriteLine($"{num} was found");
+                    Console.ReadLine();
+                    break;
+                }
+                else if (num < current.info)
+                {
+                    Console.WriteLine(current.info);
+                    current = current.left;
+                }
+                else if (num > current.info) 
+                {
+                    Console.WriteLine(current.info);
+                    current = current.right;
+                }
             }
-            if (num < current.info)
-
-                return this.Search(num, current.left);
-
-            else
-
-                return this.Search(num, current.right);
         }
     }
 }

@@ -104,7 +104,7 @@ namespace DataStructuresCode
             binaryTree.Add(11);
             binaryTree.Add(52);
 
-            binaryTree.Search(11, root);
+            binaryTree.Search(11);
 
         }
     }
