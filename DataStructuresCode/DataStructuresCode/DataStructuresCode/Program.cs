@@ -93,7 +93,18 @@ namespace DataStructuresCode
 
             //Console.WriteLine($"Height of tree is {binaryTree.Height()}");
 
-            BinaryTree newBinaryTree = new BinaryTree();
+            DataStructuresCode.BinaryTree.BinaryTree binaryTree = new DataStructuresCode.BinaryTree.BinaryTree();
+            binaryTree.Add(50);
+            binaryTree.Add(25);
+            binaryTree.Add(75);
+            binaryTree.Add(80);
+            binaryTree.Add(90);
+            binaryTree.Add(10);
+            binaryTree.Add(20);
+            binaryTree.Add(11);
+            binaryTree.Add(52);
+
+            binaryTree.Search(11, root);
 
         }
     }

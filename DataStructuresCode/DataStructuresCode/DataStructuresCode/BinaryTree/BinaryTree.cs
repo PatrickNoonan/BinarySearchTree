@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructuresCode.BinaryTree
 {
-    class BinaryTree
+    public class BinaryTree
     {
         //has
         public Node root;
@@ -25,7 +25,7 @@ namespace DataStructuresCode.BinaryTree
             if (root == null)
             {
                 root = new Node(num);
-                Console.WriteLine(root.info);
+                //Console.WriteLine(root.info);
             }
             else
             {
@@ -35,34 +35,32 @@ namespace DataStructuresCode.BinaryTree
                 {
                     parent = current;
                     
-                    if (num < parent.info)
+                    if (num < current.info)
                     {
                         if (parent.left == null)
                         {
                             parent.left = new Node(num);
-                            Console.WriteLine(parent.left.info);
+                            //Console.WriteLine(parent.left.info);
                             return;
                         }
                         else
                         {
                             current = parent.left;
-                            Console.WriteLine(current.info);
-                            break;
+                            //Console.WriteLine(current.info);
                         }
                     }
-                    else if (num > parent.info)
+                    else if (num > current.info)
                     {
                         if (parent.right == null)
                         {
                             parent.right = new Node(num);
-                            Console.WriteLine(parent.left.info);
+                            //Console.WriteLine(parent.right.info);
                             return;
                         }
                         else
                         {
                             current = parent.right;
-                            Console.WriteLine(current.info);
-                            break;
+                            //Console.WriteLine(current.info);
                         }
                     }
                     else
@@ -73,9 +71,25 @@ namespace DataStructuresCode.BinaryTree
                 }
             }
         }
-        public void Search(int num)
+        public object Search(int num, Node rootOrCurrent)
         {
+            current = rootOrCurrent;
 
+            if (current == null)
+            {
+                Console.WriteLine("Number not found");
+            }      
+            if (num == current.info)
+            {
+                Console.WriteLine(num);
+            }
+            if (num < current.info)
+
+                return this.Search(num, current.left);
+
+            else
+
+                return this.Search(num, current.right);
         }
     }
 }

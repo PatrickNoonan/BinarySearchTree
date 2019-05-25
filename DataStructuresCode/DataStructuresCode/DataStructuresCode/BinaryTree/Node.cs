@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructuresCode.BinaryTree
 {
-    class Node
+    public class Node
     {
         //has this
         public int info;
