@@ -59,39 +59,41 @@ namespace DataStructuresCode
             //stack.PushOnToStack();
 
             //Queue
-            Console.WriteLine("Queue");
-            QueueExample queue = new QueueExample();
-            queue.EnqueueOnQueue();
+            //Console.WriteLine("Queue");
+            //QueueExample queue = new QueueExample();
+            //queue.EnqueueOnQueue();
 
-            ////Binary Tree
-            ////ASCII characters table: https://www.dotnetperls.com/ascii-table
-            Console.WriteLine("Binary Tree");
-            DataStructuresCode.BinaryTree.BinaryTree binaryTree = new DataStructuresCode.BinaryTree.BinaryTree();
-            //binaryTree.CreateTree();
-            //binaryTree.Display();
-            Console.WriteLine();
+            //////Binary Tree
+            //////ASCII characters table: https://www.dotnetperls.com/ascii-table
+            //Console.WriteLine("Binary Tree");
+            //DataStructuresCode.BinaryTree.BinaryTree binaryTree = new DataStructuresCode.BinaryTree.BinaryTree();
+            ////binaryTree.CreateTree();
+            ////binaryTree.Display();
+            //Console.WriteLine();
 
-            //Pre-order starts at root and works its way down left side of tree
-            Console.WriteLine("Pre-order: ");
-            //binaryTree.PreOrder();
-            Console.WriteLine("");
+            ////Pre-order starts at root and works its way down left side of tree
+            //Console.WriteLine("Pre-order: ");
+            ////binaryTree.PreOrder();
+            //Console.WriteLine("");
 
-            //In-order starts at the farthest-left node and works its way to the farthest-right
-            Console.WriteLine("In-order: ");
-            //binaryTree.InOrder();
-            Console.WriteLine();
+            ////In-order starts at the farthest-left node and works its way to the farthest-right
+            //Console.WriteLine("In-order: ");
+            ////binaryTree.InOrder();
+            //Console.WriteLine();
 
-            //Post-order starts with the farthest-left tree and works its way to the root tree-by-tree
-            Console.WriteLine("Post-order: ");
-            //binaryTree.PostOrder();
-            Console.WriteLine();
+            ////Post-order starts with the farthest-left tree and works its way to the root tree-by-tree
+            //Console.WriteLine("Post-order: ");
+            ////binaryTree.PostOrder();
+            //Console.WriteLine();
 
-            //Level-order works its way node-to-node by level
-            Console.WriteLine("Level order: ");
-            //binaryTree.LevelOrder();
-            Console.WriteLine();
+            ////Level-order works its way node-to-node by level
+            //Console.WriteLine("Level order: ");
+            ////binaryTree.LevelOrder();
+            //Console.WriteLine();
 
             //Console.WriteLine($"Height of tree is {binaryTree.Height()}");
+
+            BinaryTree newBinaryTree = new BinaryTree();
 
         }
     }
