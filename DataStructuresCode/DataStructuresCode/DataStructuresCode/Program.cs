@@ -1,7 +1,6 @@
 ﻿using DataStructuresCode.Dictionary;
 using DataStructuresCode.HashSet;
 using DataStructuresCode.LinkedList;
-using DataStructuresCode.List;
 using DataStructuresCode.ObservableCollection;
 using DataStructuresCode.Queue;
 using DataStructuresCode.SortedList;
